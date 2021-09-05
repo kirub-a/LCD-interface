@@ -73,8 +73,8 @@ void main()
 void display(char a , char b)
 {
     LATC = a;
-    LATDbits.LATD0 = b;              //RS pin
-    LATDbits.LATD1 = 1;              //enabl pin
+    LATDbits.LATD0 = b;               //RS pin
+    LATDbits.LATD1 = 1;               //enabl pin
     __delay_ms(10);
     LATDbits.LATD1 = 0;
     __delay_ms(10);
